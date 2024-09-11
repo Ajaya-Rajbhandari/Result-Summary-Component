@@ -1,47 +1,64 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+    <link rel="stylesheet" href="styles/style.css" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Results summary component</title>
-
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
-</head>
-<body>
-
-  Your Result
-  76
-  of 100
-
-  Great
-  You scored higher than 65% of the people who have taken these tests.
-  
-  Summary
-
-  Reaction
-  80 / 100
-
-  Memory
-  92 / 100
-
-  Verbal
-  61 / 100
-
-  Visual
-  72 / 100
-
-  Continue
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
-</body>
+    <title>Frontend Mentor | Results summary component</title>
+  </head>
+  <body>
+    <main>
+      <header>
+        <h1>Your Result</h1>
+        <aside class="number">
+          <p>76</p>
+          <span>of 100</span>
+        </aside>
+        <article class="description">
+          <section class="great">
+            <h1>Great</h1>
+            <p>
+              You scored higher than 65% of the people who have taken these
+              tests.
+            </p>
+          </section>
+        </article>
+      </header>
+      <section class="summary">
+        <h2>Summary</h2>
+        <table>
+          <tr>
+            <th class="aria-row">Reaction</th>
+            <td>80 / 100</td>
+          </tr>
+          <tr>
+            <th class="aria-row">Memory</th>
+            <td>92 / 100</td>
+          </tr>
+          <tr>
+            <th class="aria-row">Verbal</th>
+            <td>61 / 100</td>
+          </tr>
+          <tr>
+            <th class="aria-row">Visual</th>
+            <td>72 / 100</td>
+          </tr>
+        </table>
+      </section>
+    </main>
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="#">Your Name Here</a>.
+    </div>
+  </body>
 </html>
