@@ -1,0 +1,19 @@
+{
+  "name": "results-summary-component-main",
+  "version": "1.0.0",
+  "description": "Results summary",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Ajaya-Rajbhandari/Result-Summary-Component.git"
+  },
+  "author": "Ajaya Rajbhandari",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Ajaya-Rajbhandari/Result-Summary-Component/issues"
+  },
+  "homepage": "https://github.com/Ajaya-Rajbhandari/Result-Summary-Component#readme"
+}
