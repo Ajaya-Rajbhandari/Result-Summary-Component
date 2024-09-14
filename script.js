@@ -8,16 +8,18 @@ fetch("data.json")
 
     const detailedSummary = document.getElementById("detail-summery-items");
     detailedSummary.innerHTML = "";
+    const ulElement = document.createElement("ul");
+    ulElement.className = "detailed-summary";
     data.forEach((item) => {
-      const itemElement = document.createElement("div");
+      const itemElement = document.createElement("li");
+      itemElement.className = `summary-${item.category}`;
       itemElement.innerHTML = `
-      <div class="summary-${item.category}">
       <img src="${item.icon}" alt="${item.Category} icon "</img>
-      <span> ${item.category}</span>
-      <span> ${item.score}/100</span>
-      </div>
+      <span class="category"> ${item.category}</span>
+      <span id="score" class="score"> ${item.score} / 100</span>
       `;
-      detailedSummary.appendChild(itemElement);
+      ulElement.appendChild(itemElement);
     });
+    detailedSummary.appendChild(ulElement);
   })
   .catch((error) => console.error("Error loading data:", error));

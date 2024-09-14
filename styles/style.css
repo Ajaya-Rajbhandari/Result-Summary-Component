@@ -40,7 +40,6 @@ body>* {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     /* background-color: var(--Neutra-Pale-blue); */
     display: flex;
-    align-items: center;
     width:  500px;
     margin: 0 auto;
 }
@@ -96,22 +95,97 @@ body>* {
 }
 
 .summery-container{
+    overflow-y: auto;
     flex: 1;
 }
 
 .summery-secondContainer{
-    padding: 70px;
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    margin: 0 auto;
+    padding: 20px;
     /* border-radius: 20px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); */
 }
 
 .detailed-summary{
+    /* display: flex; */
+    /* flex-direction: column;
+    list-style: none;
+    padding: 0;
+    margin: 0; */
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    max-width: 100%;
+    gap: 10px;
     list-style: none;
     padding: 0;
     margin: 0;
 }
 
-.detailed-summary li{
+.detailed-summary >li{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    border-radius: 13px;
+}
+
+.detailed-summary > li:last-child{
+    border-bottom: none;
+}
+
+/* .detailed-summary .summary-Reaction,
+.detailed-summary .summary-Memory,
+.detailed-summary .summary-Verbal,
+.detailed-summary .summary-Visual{
+    display: inline;
+    line-height: 2.5rem;
+    align-items: center;
+    text-align: center;
+    position: relative;
+} */
+
+.detailed-summary img{
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+}
+
+.detailed-summary span.category{
+    flex: 1;
+    text-align: left;
+}
+
+.detailed-summary #score{
+    font-weight: var(--font-weight-bold);
+    color: var(--Neutral-Dark-gray-blue);
+    margin-left: 10px;
+    text-align: right;
+}
+
+.summary-Reaction{
+    color: var(--primary-red);
+    background-color: hsl(6, 100%, 98%);
+}
+.summary-Memory{
+    background-color: hsl(37, 100%, 97%);
+    color: var(--yellow);
+}
+.summary-Verbal{
+    background-color: hsl(180, 44%, 96%);
+    color: var(--Green);
+}
+.summary-Visual{
+    background-color: hsl(234, 63%, 97%);
+    color: var(--blue);
+}
+
+/* working css */
+/* .detailed-summary li{
     margin-bottom: 10px;
 }
 
@@ -119,6 +193,32 @@ body>* {
     margin-bottom: 0;
 }
 .summary-Reaction{
+    color: var(--primary-red);
+    font-weight: var(--font-weight-bold);
     width: 100%; 
     background-color: var();
 }
+.summary-Memory{
+    color: var(--yellow);
+    font-weight: var(--font-weight-bold);
+    width: 100%; 
+    background-color: var();
+}
+.summary-Verbal{
+    color: var(--Green);
+    font-weight: var(--font-weight-bold);
+    width: 100%; 
+    background-color: var();
+}
+.summary-Visual{
+    display: inline;
+    padding: 20px;
+    color: var(--blue);
+    font-weight: var(--font-weight-bold);
+    width: 100%; 
+    background-color: var();
+}
+#score{
+    position: relative;
+    color: var(--Neutral-Dark-gray-blue);
+} */
