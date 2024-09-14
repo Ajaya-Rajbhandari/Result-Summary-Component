@@ -30,132 +30,95 @@
 body>* {
     font-family: 'Hanken', 'Grotesk', sans-serif;
     box-sizing: border-box;
+    padding: 0;
     margin: 0;
 }
-.container{
-    background-color: var(--Neutral-Light-lavender);
-    border-radius: 10px;
-    width: auto;
-    height: auto;
-}
 
-.description{
-    font-size: 1.2rem;
-    background-image: linear-gradient(var(--Light-royal-blue-background), var(--Light-slate-blue-background));
+
+.result-summary-container{
     border-radius: 20px;
-
-}
-.number{
-    background-image: linear-gradient(var(--Violet-blue-circle),var(--Persian-blue-circle));
-    width: 30%;
-    height: 70%;
-    border-radius: 50%;
-}
-
-/* main {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    /* background-color: var(--Neutra-Pale-blue); */
     display: flex;
     align-items: center;
-    justify-content: center;
+    width:  500px;
+    margin: 0 auto;
+}
+.result-container{
+    flex: 1;
+}
+.result-secondContainer{
     text-align: center;
-    width: 100%;
-    height: 100vh;
-    box-shadow: 20px 20px var(--Light-slate-blue-background);
+    padding: 50px;
+    background-image: linear-gradient(var(--Light-slate-blue-background),var(--Light-royal-blue-background));
+    border-radius: 40px;
 }
-
-header {
-    height: 80%;
-    width: 50%;
-    background-image: linear-gradient(var(--Light-slate-blue-background), var(--Light-royal-blue-background));
-    border-radius: 20px;
-    padding: 31px 0px 0px 0px;
-    margin: 1rem;
+.result-secondContainer>h3{
+    color: var(--Neutral-Light-lavender);
+    margin: 0;
+    padding: 0;
 }
-
-header>h1 {
-    font-size: 1.4rem;
-    font-weight: var(--font-weight-normal);
-    color: var(--Neutral-Light-lavender)
-}
-
-aside {
-    display: flex;
-    flex-direction: column;
-    height: 40%;
-    width: 70%;
-    background-image: linear-gradient(var(--Violet-blue-circle), var(--Persian-blue-circle));
-    border-radius: 200px;
-    margin: 20px auto;
-    justify-content: center;
-}
-
-aside>p {
-    font-family: 'Grotesk';
-    font-size: 3rem;
-    font-weight: var(--font-weight-bold);
+.result-secondContainer>h2{
     color: var(--Neutral-white);
-    margin-top: 0;
+}
+.circle-content{
+    padding: 20px;
+}
+.result-description{
+    color: var(--Neutral-Light-lavender);
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+.summary-content{
+    border: 2px solid var(--Neutral-Dark-gray-blue);
+    width: fit-content;
+    word-spacing: 2rem;
+}
+.circle-content>h1{
+    font-size: 3.7rem;
+    margin-top: 7px;
+    margin-bottom: 0;
+    font-family: 'Hanken';
+    font-weight: var(--font-weight-extra-bold);
+    color: var(--Neutral-white);
+}
+.circle-content>p{
+    margin: 0;
+    color: var(--Neutral-Light-lavender);
+}
+
+.circle-container{
+    width: 100%;
+    height: 9rem;
+    border-radius: 50%;
+    background-image: linear-gradient(var(--Persian-blue-circle), var(--Violet-blue-circle));
+}
+
+.summery-container{
+    flex: 1;
+}
+
+.summery-secondContainer{
+    padding: 70px;
+    /* border-radius: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); */
+}
+
+.detailed-summary{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.detailed-summary li{
+    margin-bottom: 10px;
+}
+
+.detailed-summary li:last-child{
     margin-bottom: 0;
 }
-
-aside>span {
-    font-size: 1.3rem;
-    color: var(--Neutral-Light-lavender);
+.summary-Reaction{
+    width: 100%; 
+    background-color: var();
 }
-
-.description {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.great>h1 {
-    color: var(--Neutral-white);
-    font-size: 1.5rem;
-}
-
-.great>p {
-    width: 80%;
-    align-items: center;
-    padding: 20px auto;
-    text-align: center;
-    margin: 20px;
-    font-size: 16px;
-    color: var(--Neutral-Light-lavender);
-}
-
-.summary {
-    height: 80%;
-    width: 50%;
-    background-image: linear-gradient(var(--Light-slate-blue-background), var(--Light-royal-blue-background));
-    border-radius: 20px;
-    padding: 31px 0px 0px 0px;
-    margin: 1rem;
-    display: flex;
-    flex-direction: column;
-}
-
-.summary>h2 {
-    float: left;
-} 
- /* Medium screen and above
- 
- /* Add styles for medium screens and above */
- @media (min-width: 768px) {
-     .header {
-         flex-direction: row;
-     }
-
-     .number {
-         display: inline-block;
-     }
-    } 
-
- /* Large screen and above */
- @media (min-width: 992px) {
-
-     /* Add styles for large screens and above */
-     .summary table {
-         width: 80%;
-         margin: 0 auto;
-     }
- } 
