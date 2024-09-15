@@ -16,7 +16,11 @@ fetch("data.json")
       itemElement.innerHTML = `
       <img src="${item.icon}" alt="${item.Category} icon "</img>
       <span class="category"> ${item.category}</span>
-      <span id="score" class="score"> ${item.score} / 100</span>
+      <span id="score" class="score"> ${item.score} 
+      <span class="score-unit">
+      / 100
+      </span>
+      </span>
       `;
       ulElement.appendChild(itemElement);
     });
