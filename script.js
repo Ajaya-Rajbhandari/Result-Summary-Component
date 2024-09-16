@@ -35,23 +35,4 @@ const createListItem = (item) => {
   return itemElement;
 };
 
-const button = document.getElementById("btn");
-button.addEventListener("click", loadData);
-
-// //hide and show button
-// const hideButton = document.getElementById("hide-button");
-// const continueButton = document.getElementById("continue-btton");
-
-// hideButton.addEventListener("click", () => {
-//   const categories = document.querySelectorAll(".category");
-//   categories.forEach((category) => {
-//     category.classList.add("blur");
-//   });
-// });
-
-// continueButton.addEventListener("click", () => {
-//   const categories = document.querySelectorAll(".category");
-//   categories.forEach((category) => {
-//     category.classList.remove("blur");
-//   });
-// });
+loadData();
